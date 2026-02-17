@@ -13,7 +13,7 @@ body {
     color: #1A1A1A;
     background-color: #FFFFFF;
     scroll-behavior: smooth;
-    overflow-x: hidden; /* Voorkomt zijwaarts scrollen op mobiel */
+    overflow-x: hidden;
 }
 
 /* =========================================
@@ -319,7 +319,6 @@ footer {
    9. RESPONSIVE DESIGN (MOBIEL)
    ========================================= */
 
-/* Tablets en kleinere laptops */
 @media (max-width: 1024px) {
     .navbar {
         padding: 0 4%;
@@ -330,7 +329,6 @@ footer {
     }
 }
 
-/* Smartphones */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -343,7 +341,7 @@ footer {
     }
 
     .site-logo {
-        height: 80px; /* Logo wordt kleiner op mobiel */
+        height: 100px; /* Groter logo voor telefoon (was 80px) */
     }
 
     .nav-links {
@@ -361,7 +359,7 @@ footer {
     }
 
     .nav-icons {
-        display: none; /* Verbergt mail icoon in nav op kleine schermen voor ruimte */
+        display: none; 
     }
 
     .container {
@@ -382,16 +380,15 @@ footer {
     }
 }
 
-/* Hele kleine telefoons */
 @media (max-width: 480px) {
     .site-logo {
-        height: 60px;
+        height: 90px; /* Blijft goed zichtbaar op kleine schermen */
     }
     .nav-links li {
         margin: 5px 6px;
     }
     .cta-button {
         padding: 15px 25px;
-        width: 100%; /* Knoppen over de hele breedte op mobiel */
+        width: 100%; 
     }
 }
